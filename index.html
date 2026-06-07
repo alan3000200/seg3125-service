@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GreatPaws Veterinary Clinic</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo">🐾 GreatPaws</div>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#services">Services</a>
+            <a href="#booking">Book</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <div>
+            <h1 class="title">Compassionate Care for Your Pets</h1>
+            <p>GreatPaws Veterinary Clinic provides trusted healthcare for cats and dogs.</p>
+            <a href="#booking" class="btn">Book Appointment</a>
+        </div>
+    </section>
+
+    <section class="why-section">
+        <div class="why-intro">
+            <h2 class="title">Why Choose GreatPaws?</h2>
+            <p>Simple, trustworthy care for everyday pet health needs.</p>
+        </div>
+
+        <div class="why-list">
+            <div class="why-item">
+                <span>01</span>
+                <h3>Compassionate Care</h3>
+                <p>We treat every pet like family and keep visits calm and comfortable.</p>
+            </div>
+
+            <div class="why-item">
+                <span>02</span>
+                <h3>Clear Pricing</h3>
+                <p>Common service prices are shown upfront so owners can plan ahead.</p>
+            </div>
+
+            <div class="why-item">
+                <span>03</span>
+                <h3>Easy Booking</h3>
+                <p>Book vaccinations, exams, dental care, and nail trims online.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="section">
+        <h2 class="title">Our Services</h2>
+        <div class="cards">
+            <div class="card">
+                <img src="images/vaccination.jpg" alt="Vaccination">
+                <h3>Vaccinations</h3>
+                <p>Protect your pet with essential vaccines.</p>
+                <strong>$45</strong>
+            </div>
+            <div class="card">
+                <img src="images/wellness.jpg" alt="Wellness Exam">
+                <h3>Wellness Exams</h3>
+                <p>Routine checkups to keep your pet healthy.</p>
+                <strong>$75</strong>
+            </div>
+            <div class="card">
+                <img src="images/dental.jpg" alt="Dental Cleaning">
+                <h3>Dental Cleaning</h3>
+                <p>Professional dental care for better oral health.</p>
+                <strong>$150</strong>
+            </div>
+            <div class="card">
+                <img src="images/trimming.jpg" alt="Nail Trimming">
+                <h3>Nail Trimming</h3>
+                <p>Quick and gentle nail trimming service.</p>
+                <strong>$20</strong>
+            </div>
+        </div>
+    </section>
+
+    <section id="booking" class="section booking">
+        <h2 class="title">Book an Appointment</h2>
+
+        <form id="appointmentForm">
+            <label>Owner Name</label>
+            <input type="text" id="ownerName" required />
+
+            <label>Pet Name</label>
+            <input type="text" id="petName" required />
+
+            <label>Service</label>
+            <select id="service" required>
+                <option value="">Choose a service</option>
+                <option value="Vaccinations" data-price="$45">Vaccinations</option>
+                <option value="Wellness Exam" data-price="$75">Wellness Exam</option>
+                <option value="Dental Cleaning" data-price="$150">Dental Cleaning</option>
+                <option value="Nail Trimming" data-price="$20">Nail Trimming</option>
+            </select>
+
+            <p id="pricePreview">Estimated price: —</p>
+
+            <label>Date</label>
+            <input type="date" id="date" required />
+
+            <label>Time</label>
+            <select id="time" required>
+                <option value="">Choose a time</option>
+                <option>9:00 AM</option>
+                <option>11:00 AM</option>
+                <option>2:00 PM</option>
+                <option>4:00 PM</option>
+            </select>
+
+            <button type="submit" class="btn">Confirm Appointment</button>
+        </form>
+
+        <div id="confirmation" class="confirmation hidden"></div>
+    </section>
+
+    <section class="section faq">
+        <h2 class="title">Frequently Asked Questions</h2>
+
+        <h3>Do I need an appointment?</h3>
+        <p>Yes, appointments help us reduce waiting times and prepare for your pet's visit.</p>
+
+        <h3>What should I bring?</h3>
+        <p>Please bring any vaccination records, medication information, and your pet's carrier or leash.</p>
+
+        <h3>Do you treat cats and dogs?</h3>
+        <p>Yes, GreatPaws provides care for both cats and dogs.</p>
+    </section>
+
+    <section id="contact" class="section contact">
+        <h2 class="title">Contact Us</h2>
+        <p><strong>Address:</strong> 123 Paw Street, Ottawa, ON</p>
+        <p><strong>Phone:</strong> (613) 555-0198</p>
+        <p><strong>Email:</strong> hello@greatpaws.ca</p>
+        <p><strong>Hours:</strong> Monday–Friday, 8:00 AM–6:00 PM</p>
+    </section>
+
+    <footer>
+        <p>Designed by Alan Xia | GreatPaws Veterinary Clinic</p>
+    </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
